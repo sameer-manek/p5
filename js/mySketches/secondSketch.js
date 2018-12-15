@@ -10,16 +10,16 @@ function setup()
 
 function renderEllipse(x, y)
 {
-	if(x*y > ((width/2) * (height*2))) {
+	if(x > width/2) {
 		this.x = -width/2
 		this.y = -height/2
 	}
 	console.log(x, y)
 	translate(width/2, height/2)
 	colorMode(HSB);
-	strokeWeight(4);
-	stroke(255, 255, 255);
-	noFill();
+	strokeWeight(2);
+	stroke(255);
+	fill(255);
 	ellipse(x, y, 100)
 }
 
